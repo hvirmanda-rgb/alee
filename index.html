@@ -173,10 +173,16 @@
         #line2 {
             opacity: 0;
             animation: fadeIn 1s 4.5s forwards;
+            text-align: center; /* Pastikan teks di tengah */
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+        #line3 {
+            opacity: 0;
+            animation: fadeIn 1s 5.5s forwards; /* Muncul setelah line2 */
+            text-align: center; /* Teks di tengah */
         }
         audio {
             margin-top: 20px;
@@ -223,8 +229,9 @@
     <h1>Happy Valentine Day Qilla! 💖</h1>
     <button onclick="showMessage()">Pencet ini :)</button>
     <div id="message">
-        <p id="line1">Maaf ya telat ngasih nya hehehe ❤️ Semoga hari valentinemu penuh cinta dan kebahagiaan!</p>
-        <p id="line2">Maaf ya baru bisa kasih ini💕</p>
+        <p id="line1">Maaf ya telat ngasih nya hehehe ❤️</p>
+        <p id="line2">Semoga hari valentinemu penuh cinta dan kebahagiaan!</p>
+        <p id="line3">Maaf ya baru bisa kasih ini💕</p>
     </div>
     <audio id="bgMusic" controls loop>
         <source src="No One Noticed (Best Part Version) - Tyros.mp3" type="audio/mp3"> <!-- Ganti path ini dengan nama file MP3 setelah upload ke host (misal: Netlify). Path lokal seperti C:\ tidak akan bekerja online. -->
